@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-1: #010a1f;
+    --cor-2: #e6e6e6;
+    --cor-3: #22d4fd;
+
+    --fonte-1K: 'Krona One', sans-serif;
+    --fonte-2M: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-1);
+    color: var(--cor-2);
+}
+
+.image{
+    width : 50%;
+    height: 50%; 
+}
+h1{
+    color: var(--cor-2);
+}
+
+.cabecalho{
+    padding: 2% /*cima*/ 0% /*direito*/ 0% /*baixo*/ 15% /*esquerdo*/;
+}
+
+.menu{
+    display: flex;
+    gap: 80px;
+}
+.menu__link{
+    font-family: var(--fonte-2M);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--cor-3);
+    text-decoration: none;
+}
+
+strong{
+    color: var(--cor-3);
+}
+
+.RHC{
+    color: #8d0801;
+}
+
+.apresentacao{
+    margin: 5% 15%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    gap: 82px;
+}
+
+.texto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.frase1{
+    font-size: 2.25rem;
+    font-family: var(--fonte-1K);
+}
+
+.frase2{
+    font-size: 1.5rem;
+    font-family: var(--fonte-2M);
+}
+
+.redes{
+    font-family:  var(--fonte-1K);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.link1{
+    color: var(--cor-3);
+    /* color: #010a1f; */
+    /* background-color: #22d4fd; */
+    
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    border: 2px solid var(--cor-3);; /*solid; dotted; dashed; double: groove: ridge: inset: outset: none: hidden; */
+    width: 50%;/*largura do botão*/
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 21.5px 0;
+    font-family: var(--fonte-2M);
+}
+
+.link1:hover{
+    background-color: var(--cor-1);
+}
+
+.rodape{
+    padding: 24px;
+    background-color: var(--cor-3);
+    color: var(--cor-1);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--fonte-2M);
+    font-weight: 400;
+}
+
+@media(max-width: 1200px){
+     .cabecalho{
+        padding: 10%;
+    }
+    .menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .texto{
+        width: auto;
+    }
+   
+}
